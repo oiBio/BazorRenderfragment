@@ -1,0 +1,14 @@
+﻿@if(Header == null)
+{
+    <h1>Default Header!</h1>
+}
+else
+{
+    @Header
+}
+
+
+
+@code {
+    [Parameter] public RenderFragment Header { get; set; }
+}
